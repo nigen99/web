@@ -1,0 +1,55 @@
+.animating-button-1 {
+  background-color: black;
+  border-radius: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  text-decoration: none;
+  padding: 20px 120px;
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  animation: fade-in-right 2s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+
+.animating-button-2{
+  background-color: black;
+  border-radius: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  text-decoration: none;
+  padding: 20px 120px;
+  position: absolute;
+  right: 0px;
+  opacity: 0;
+  animation: fade-in-left 2000ms forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(210%);
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity:0;
+     transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-210%);
+  }
+}
