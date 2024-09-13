@@ -53,3 +53,16 @@
     transform: translateX(-140%);
   }
 }
+
+.spacing-1 {
+  animation: move-down-1 2ms forwards;
+}
+
+@keyframes move-down-1 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
